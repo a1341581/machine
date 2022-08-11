@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Container, Placeholder, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import Card6 from '../../components/Cards/Card6'
 import { Navbar1 } from '../../components/Navbar'
 

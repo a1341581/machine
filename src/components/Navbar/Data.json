@@ -1,0 +1,26 @@
+[
+    {
+      "machinename": "Articulated Hauler",
+      "link": "http://localhost:3000/SearchArticulatedHauler"
+    },
+    {
+      "machinename": "Asphalt Paver",
+      "link": "http://localhost:3000/SearchAsphaltPaver"
+    },
+    {
+      "machinename": "Drum Roller",
+      "link": "http://localhost:3000/SearchDrumRoller"
+    },
+    {
+      "machinename": "Excavator",
+      "link": "http://localhost:3000/searchexcavator"
+    },
+    {
+      "machinename": "Harvester",
+      "link": "http://localhost:3000/searchharvester"
+    },
+    {
+      "machinename": "Wheel Tractor Scraper",
+      "link": "http://localhost:3000/SearchWheelTractorScraper"
+    }
+  ]

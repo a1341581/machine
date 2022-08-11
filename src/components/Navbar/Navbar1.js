@@ -1,8 +1,10 @@
 import React from 'react'
-import {Navbar,Nav,Container,Form,FormControl,Button } from 'react-bootstrap'
+import {Navbar,Nav,Container,Form } from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import './Navbar.css';
 import {Dropdown} from 'react-bootstrap'
+import SearchBar from './SearchBar';
+import machineData from './Data.json';
 
 function Navbar1() {
     return (
@@ -19,9 +21,15 @@ function Navbar1() {
         <Nav.Link as={Link} to={"/login"}>LOGIN</Nav.Link>
        
       </Nav>
-      <Dropdown className="d-inline mx-2">
-    <Dropdown.Toggle id="dropdown-autoclose-true">
+      <Form className="App">
+    <SearchBar placeholder="Search..." data={machineData}/>
+    {/* <Button variant="secondary" id="button-addon2">
       Search
+    </Button> */}
+      </Form>    
+     <Dropdown className="d-inline mx-2">
+    <Dropdown.Toggle id="dropdown-autoclose-true">
+      Category
     </Dropdown.Toggle>
 
     <Dropdown.Menu>
@@ -32,16 +40,7 @@ function Navbar1() {
       <Dropdown.Item href="http://localhost:3000/SearchDrumRoller">Drum Roller</Dropdown.Item>
       <Dropdown.Item href="http://localhost:3000/SearchAsphaltPaver">Asphalt Paver</Dropdown.Item>
     </Dropdown.Menu>
-  </Dropdown>
-      {/* <Form className="d-flex">
-        <FormControl
-          type="search"
-          placeholder="Search"
-          className="me-2"
-          aria-label="Search"
-        />
-        <Button href="#" variant="primary">Search</Button>
-      </Form>   */}
+  </Dropdown> 
     </Navbar.Collapse>
   </Container>
 </Navbar>
